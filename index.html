@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>랜덤 카드 뽑기</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&family=Cinzel:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-glow"></div>
+  
+  <main class="container">
+    <header class="header">
+      <h1 class="title">RANDOM CARD</h1>
+      <p class="subtitle">버튼을 눌러 새로운 카드를 뽑아보세요</p>
+    </header>
+
+    <div class="card-stage">
+      <div id="card-container" class="card-container">
+        <!-- 초기 카드 뒷면 또는 안내 뷰 -->
+        <div class="card card-back initial" id="card">
+          <div class="card-inner">
+            <div class="card-face card-back-design">
+              <div class="pattern-ring"></div>
+              <div class="deck-emblem">✦</div>
+              <span class="back-text">DRAW ME</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-area">
+      <button id="draw-btn" class="draw-button" type="button">
+        <span class="btn-sparkle">✨</span>
+        <span class="btn-text">카드 뽑기</span>
+      </button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
